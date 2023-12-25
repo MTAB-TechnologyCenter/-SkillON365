@@ -1223,6 +1223,20 @@ font-size: 2.1rem;
                 background:linear-gradient(90deg,#4a6af8,#00318d );
                  color:#fff;
             }
+            .Empower-text h1{
+                font-size: 4rem;
+                color: #024e8b;
+             }
+             .Empower-text h2{
+                padding-top: 15px;
+             }
+             .main-image00 {
+                width: 800px;
+                height: 450px;
+                background: url('rocket.png') center/cover; 
+            }
+            
+           
              /*---------------------------------------DIGITAL TRASFORMATIO-------------------------*/  
               
            
@@ -1461,4 +1475,4 @@ font-size: 2.1rem;
                 height: 400px;
                 background: url('sal4.jpg') center/cover; 
             }
-            
+             
