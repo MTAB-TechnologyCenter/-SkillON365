@@ -198,12 +198,22 @@ body{
     align-items: center;
     gap: 10px;
     color: #1E1E1E;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.description-container h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fffafa;
+    font-size: 30px;
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
     word-wrap: break-word;
 }
-
 .role-text {
     padding: 10px;
     display: flex;
@@ -684,13 +694,13 @@ font-size: 2.1rem;
         padding-bottom: 20px;
         padding-top: 20px;
        }
-       ul {
+       .industries-icon ul {
         display: flex;
         list-style: none;
         padding: 0;
       }
       
-      ul li {
+      .industries-icon ul li {
         position: relative;
         display: flex;
         align-items: center;
@@ -723,13 +733,13 @@ font-size: 2.1rem;
         z-index: -1;
         transition: 0.5s; 
       }
-      i
+      .industries-icon i
       ul li:hover:before {
         filter: blur(3px);
         transform: scale(0.8);
       }
       
-      ul li:hover {
+      .industries-icon ul li:hover {
         color:  #fcfeff; /* Set the desired color */
         box-shadow: 0 0 15px #fafafa; /* Set the desired color */
         text-shadow: 0 0 15px #fdfdfd; /* Set the desired color */
@@ -816,6 +826,7 @@ font-size: 2.1rem;
         margin-top: 80px;
         padding-right: 20px;
     }
+     /*----------------------------TEXT-------------------------------------------------------------------------------------------------------*/
     .Empower-text{
         display: flex;
         flex-direction: column;
@@ -1101,3 +1112,353 @@ font-size: 2.1rem;
                 max-width: 100%;
                 max-height: 100%;
             }
+            .Transformation{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                 margin-top: 20px;  margin-left: 25px;
+            }
+             
+            .Transformation .product-card {
+                width: 350px;
+                margin: 20px;
+                background-color: #fff;
+                padding: 15px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+                text-align: center;
+
+            }
+            .list{
+                position: relative; width: 500px; padding-top: 50px;  
+            }
+            
+             
+            .list ul{
+                position: relative;
+            }
+            .list ul li{
+                position: relative;
+                left:0;
+                color:#999;
+                list-style: none;
+                margin: 4px 0;
+                border-left: 2px solid #00BAD5;
+                transition: left 0.5s, color 0.5s;
+                cursor: pointer;
+            }
+            .list ul li::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                 
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: 0.5s;
+            }
+            .list ul li::before{
+                transform: scaleX(1.5);
+            }
+            .list ul li:hover{
+                left: 10px;
+
+            }
+            .list ul li span{
+                position: relative;
+                padding: 8px;
+                display: inline-block;
+                z-index: 1; font-size: 1.3rem;
+                transition: 0.5s;
+            }
+            .list ul li:hover span{
+                color: #00BAD5;
+            }
+            .Empowered-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 40px; /* Adjust as needed */
+            }
+             .Empowered-text h2{
+                padding-top: 100px;
+                font-size: 2rem; color: #fff;
+             }
+             .Empowered-text p{
+                font-size: 1.5rem; width: 85%; padding-top: 30px; color: #00BAD5;
+             }
+             .Strategies-cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                 margin-top: 30px;
+            
+            }
+            .Strat-container{
+                text-align: center;
+                margin-top: 360px;
+              }
+              .oval-container {
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 1px;
+                 margin-top: 30px;
+            }
+            
+            .oval {
+                width: 620px;
+                height: 50px;
+                background-color: #3498db;
+                color: #000000;
+                border-radius: 25px; /* Half of the height for an oval shape */
+                text-align: center;
+                line-height: 50px; /* Align text vertically */
+                margin: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            
+            .oval:hover {
+                transform: translateX(10px);
+                background:linear-gradient(90deg,#4a6af8,#00318d );
+                 color:#fff;
+            }
+             /*---------------------------------------DIGITAL TRASFORMATIO-------------------------*/  
+              
+           
+            .content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; padding-top: 60px;
+            }
+            
+            .text-content {
+                flex: 1; margin-left: 100px; padding-top: 0;
+            }
+            .Rtext-content{padding-right: 40px;margin-right: 40px;}
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            li {
+                margin-bottom: 10px;
+            }
+            
+            .images {
+                display: flex;
+                gap: 20px;
+            }
+            
+            .main-image1 {
+                width: 600px;
+                height: 400px;
+                background: url('clouderp1.png') center/cover; 
+            }
+            .main-image2 {
+                width: 600px;
+                height: 400px;
+                background: url('clouderp2.png') center/cover; 
+            }
+            .main-image3 {
+                width: 600px;
+                height: 400px;
+                background: url('cloderp4.png') center/cover; 
+            }
+            .main-image4 {
+                width: 600px;
+                height: 400px;
+                background: url('clouderp3.png') center/cover; 
+            }
+            .main-image5 {
+                width: 600px;
+                height: 400px;
+                background: url('clouderp5.png') center/cover; 
+            }
+            .main-image6 {
+                width: 600px;
+                height: 400px;
+                background: url('clouderp6.png') center/cover; 
+            }
+            .main-image11 {
+                width: 600px;
+                height: 400px;
+                background: url('trai1.png') center/cover; 
+            }
+            .main-image12 {
+                width: 600px;
+                height: 400px;
+                background: url('trai2.png') center/cover; 
+            }
+            .main-image13 {
+                width: 600px;
+                height: 400px;
+                background: url('trai3.png') center/cover; 
+            }
+            .main-image14 {
+                width: 600px;
+                height: 400px;
+                background: url('trai4.png') center/cover; 
+            }
+            .main-image15 {
+                width: 600px;
+                height: 400px;
+                background: url('trai5.png') center/cover; 
+            }
+            .main-image16 {
+                width: 600px;
+                height: 400px;
+                background: url('trai6.png') center/cover; 
+            }
+            .main-image17 {
+                width: 600px;
+                height: 400px;
+                background: url('trai7.png') center/cover; 
+            }
+            .main-image18 {
+                width: 600px;
+                height: 400px;
+                background: url('trai8.png') center/cover; 
+            }
+            .main-image19 {
+                width: 600px;
+                height: 400px;
+                background: url('trai9.png') center/cover; 
+            }
+            .main-image20 {
+                width: 600px;
+                height: 400px;
+                background: url('trai10.png') center/cover; 
+            }
+            .main-image21 {
+                width: 600px;
+                height: 400px;
+                background: url('tal1.png') center/cover; 
+            }
+            .main-image22 {
+                width: 600px;
+                height: 400px;
+                background: url('tal2.png') center/cover; 
+            }
+            .main-image23 {
+                width: 600px;
+                height: 400px;
+                background: url('tal3.png') center/cover; 
+            }
+            .main-image24 {
+                width: 600px;
+                height: 400px;
+                background: url('tal4.png') center/cover; 
+            }
+            .main-image25 {
+                width: 600px;
+                height: 400px;
+                background: url('tal5.png') center/cover; 
+            }
+            .main-image26 {
+                width: 600px;
+                height: 400px;
+                background: url('tal6.png') center/cover; 
+            }
+            .main-image27 {
+                width: 600px;
+                height: 400px;
+                background: url('tal7.png') center/cover; 
+            }
+            .main-image28 {
+                width: 600px;
+                height: 400px;
+                background: url('tal8.png') center/cover; 
+            }
+            .main-image29 {
+                width: 600px;
+                height: 400px;
+                background: url('tal9.png') center/cover; 
+            }
+            .main-image30 {
+                width: 600px;
+                height: 400px;
+                background: url('tal10.png') center/cover; 
+            }
+            
+            /*.Strength1{
+                width: 100%;
+                background-color: rgb(253, 253, 253);
+                background: url('BG2.png')no-repeat ;
+            }*/
+            .main-image41 {
+                width: 600px;
+                height: 400px;
+                background: url('ser4.png') center/cover; 
+            }
+            .main-image42 {
+                width: 600px;
+                height: 400px;
+                background: url('ser3.png') center/cover; 
+            }
+            .main-image43 {
+                width: 600px;
+                height: 400px;
+                background: url('ser2.png') center/cover; 
+            }
+            .main-image44 {
+                width: 600px;
+                height: 400px;
+                background: url('ser1.png') center/cover; 
+            }
+            .main-image45 {
+                width: 600px;
+                height: 400px;
+                background: url('ser5.png') center/cover; 
+            }
+            .main-image46 {
+                width: 600px;
+                height: 400px;
+                background: url('ser6.png') center/cover; 
+            }
+            .main-image47 {
+                width: 600px;
+                height: 400px;
+                background: url('ser7.png') center/cover; 
+            }
+            .main-image48 {
+                width: 600px;
+                height: 400px;
+                background: url('ser8.png') center/cover; 
+            }
+            .main-image49 {
+                width: 600px;
+                height: 400px;
+                background: url('ser9.png') center/cover; 
+            }
+            .main-image50 {
+                width: 600px;
+                height: 400px;
+                background: url('ser10.png') center/cover; 
+            }
+            .main-image51 {
+                width: 600px;
+                height: 400px;
+                background: url('SALE1.png') center/cover; 
+            }
+            .main-image52 {
+                width: 600px;
+                height: 400px;
+                background: url('sal2.png') center/cover; 
+            }
+            .main-image53 {
+                width: 600px;
+                height: 400px;
+                background: url('sal3.png') center/cover; 
+            }
+            .main-image54 {
+                width: 600px;
+                height: 400px;
+                background: url('sal4.png') center/cover; 
+            }
+            
