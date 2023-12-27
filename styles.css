@@ -821,7 +821,84 @@ font-size: 2.1rem;
         height: 100%;
         background: #004bd5;
     }
+    .choose-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+         margin-top: 42px; 
     
+    }
+    
+    .effectchoose-card{
+        height: 180px;
+        width:33col0px; 
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 1% 8%;
+    border-radius: 8px;
+    transition: 0.6s;
+    } 
+    .effectchoose-card h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    .effchoose{
+        padding-top: 30px;
+    }
+    .effectchoose-card img{
+        width:200px;
+        height: 130px;
+    }
+     .effchoose h2{ font-size: 1.5rem; color:#00318d }
+      
+     .effectchoose-card:hover{
+        background:linear-gradient(90deg,#ffffff,#ffffff );
+        transform: translateY(-8px);
+     }
+      
+        .effectchoose-card:hover h3 {
+            color: #0a0a0a;
+        }
+        .effectchoose-card:hover p{
+            color: #0a0a0a;
+        }
+        @media(max-width:800px){
+            .choose-cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(max-width:600px){
+            .choose-cards{
+                grid-template-columns: repeat(1,1fr);
+    
+            }
+           h1{
+            font-size: 2rem;
+           }
+           p{
+            width: 80%;
+           }
+        }
+        @media(max-width:400px){
+            .effectchoose-card{
+                height:200px;
+                width:220px;
+            }
+            .effectchoose-card i{
+                margin-top: 20px;
+            }
+            h3{
+                margin-bottom: 12px;
+    
+    
+            }
+            p{
+                width: 90%;
+    
+            }
+        }
     .additional-paragraph {
         margin-top: 80px;
         padding-right: 20px;
@@ -967,6 +1044,9 @@ font-size: 2.1rem;
             transition: all 0.3s ease-in-out;
             background-image: linear-gradient(-45deg, #8894fc 0%, #8ac7f8 100% );
         }
+        .provide{
+            padding-top: 90px;
+        }
         .Dig-cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -1051,6 +1131,7 @@ font-size: 2.1rem;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
                  margin-top: 20px;
+
             }
             .product-card {
                 width: 400px;
@@ -1197,6 +1278,10 @@ font-size: 2.1rem;
             .Strat-container{
                 text-align: center;
                 margin-top: 360px;
+              }
+              .bartext{
+                width: 100%;
+                font-size: 1.3rem;
               }
               .oval-container {
                 display: grid;
