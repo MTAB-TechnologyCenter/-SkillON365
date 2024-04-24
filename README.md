@@ -1,6 +1,4 @@
-# Course  
-
-Course  is a platform that showcases business strategies, with a primary focus on e-commerce websites.
+ 
 
 
 ## Files
